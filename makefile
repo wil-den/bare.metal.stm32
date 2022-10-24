@@ -55,5 +55,6 @@ $(TARGET).bin: $(TARGET).elf
 	$(OS) $<
 .PHONY: clean
 clean:
-	rm -f $(OBJS)
+	rm -f $(TARGET).o
+	rm -f $(TARGET).bin
 	rm -f $(TARGET).elf
